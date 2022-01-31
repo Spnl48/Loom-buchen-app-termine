@@ -1,0 +1,63 @@
+{
+  "routes": [
+
+      {
+      "method": "GET",
+      "path": "/email",
+      "handler": "Email.index",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "GET",
+      "path": "/kundes",
+      "handler": "kunde.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kundes/count",
+      "handler": "kunde.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kundes/:id",
+      "handler": "kunde.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kundes",
+      "handler": "kunde.create",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "PUT",
+      "path": "/kundes/:id",
+      "handler": "kunde.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kundes/:id",
+      "handler": "kunde.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

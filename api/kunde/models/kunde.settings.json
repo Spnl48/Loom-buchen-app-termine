@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kundes",
+  "info": {
+    "name": "kunde",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "KundeName": {
+      "type": "string",
+      "required": false
+    },
+    "KundeNummer": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "KundeEmail": {
+      "type": "email",
+      "required": false
+    },
+    "Empfstadt": {
+      "type": "email"
+    }
+  }
+}
